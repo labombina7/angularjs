@@ -1,0 +1,74 @@
+<!-- 
+	Vamos a hacer un formulario con Angularjs
+-->
+<!DOCTYPE HTML>
+<html ng-app>
+<head>
+	<title>Form Submission</title>
+	<meta charset="UTF-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-controller="formController">
+	
+	<div class="wrapper">
+		<div class="mainOutput">
+			<form name="miForm" novalidate>
+				
+					<span class="label">Name</span>
+					<input ng-model="form.name" placeholder="First Name" ><br>
+				
+				
+					<span class="label">Surname</span>
+					<input ng-model="form.surname" placeholder="Last Name" ><br>
+				
+				
+					<span class="label">Address</span>
+					<input ng-model="form.address" placeholder="Address" ><br>
+				
+				
+					<span class="label">City</span>
+					<input ng-model="form.city" placeholder="City" ><br>
+				
+				
+					<span class="label">State</span>
+					<input ng-model="form.state" placeholder="State" ><br>
+				
+				
+					<span class="label">Zip Code</span>
+					<input type="number" ng-model="form.zip" placeholder="Zip Code" ><br>
+				
+				
+					<span class="label">Phone</span>
+					<input ng-model="form.phone" placeholder="Phone" ><br>
+				
+				
+					<span class="label">Email</span>
+					<input ng-model="form.email" placeholder="Email" ><br>
+					
+					<div id="buttons">
+						<button ng-click="restore(form)">RESTORE</button>
+
+						<button ng-click="submit(form)">SUBMIT</button>
+					</div>
+				</p>
+			</form>
+		</div>
+
+		<div class="debugOutput">
+
+			<h3>Debug View</h3>
+
+			<div id="storedObj">
+				{{storedInfo}}
+			</div>		
+
+			<div id="pendingObj">
+				{{form}}
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

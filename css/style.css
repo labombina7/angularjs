@@ -1,0 +1,51 @@
+.wrapper{
+	margin: auto;
+	width: 550px;
+}
+
+input{
+	width: 130px;
+}
+
+form{
+	margin: 5px;
+}
+
+.mainOutput{
+	border: 1px solid black;
+	float: left;
+	background: #CCCCCC;
+	border-radius: 12px;
+	box-shadow: 5px 3px 3px grey;
+	margin-right: 15px;
+	width: 250px;
+}
+
+.debugOutput{
+	border: 1px solid black;
+	float: left;
+	background: #CCCCCC;
+	width: auto;
+	height: 150px;
+	border-radius: 12px;
+	box-shadow: 5px 3px 3px grey;
+	margin: 3px auto;
+}
+
+
+
+.label{
+	float:left;
+  	font-size:.9em;
+	font-weight:bold;
+	text-align:right;
+	width:75px;
+	margin-right:10px;
+	line-height:20px;
+}
+
+#buttons{
+	padding-top: 10px;
+	margin: auto;
+	width: 160px;
+}
